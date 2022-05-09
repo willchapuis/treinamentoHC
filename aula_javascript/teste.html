@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Medicamentos</title>
+    <link rel="stylesheet" type="text/css"
+    href="../assets/css/estiloTeste.css" />
+</head>
+<body>
+    <h1 class="Titulo">Total de medicamentos:</h1>
+    <!-- <h4>Meus medicamentos</h4> -->
+
+    Paciente: <strong>William C. Marciano</strong>
+    <br/>
+    Foto: <img src="assets/img/aleatorio.jpg">
+
+    <br/><br/>
+
+    <form>
+        <table>
+            <tr>
+                <td>Medicamento</td>
+                <td>Preço</td>
+            </tr>
+            
+                <td>
+                    <input id="medicamento" type="text" placeholder="Digite aqui o medicamento" />
+                </td>
+                <td>
+                    <input id="preco" type="text" placeholder="Digite aqui o valor" />
+                </td>
+                <td>
+                    <button type="submit" onclick="handleIncluir()">Incluir</button>
+                </td>
+        </table>
+    </form>
+
+    <p>Meus Medicamentos:</p>
+
+    <ul id="lista">
+
+    </ul>
+
+    <script src="assets/js/outroScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem dos Registros de Entrada</title>
+</head>
+<body>
+    <h2>Registros de Entrada</h2>
+
+    <ul>
+    {% for registro in registros %}
+
+        <li><a href="{% url 'url_update_entrada' registro.id %}">{{ registro.placa }} &emsp; - &emsp; {{ registro.hora_entrada }}</a></li>
+        
+    {% endfor %}
+    </ul>
+
+    <a href="{% url 'url_novaEntrada' %}">Novo</a>
+
+</body>
+</html>

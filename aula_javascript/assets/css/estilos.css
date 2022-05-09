@@ -1,0 +1,21 @@
+body{
+    background-color: chocolate;
+}
+
+strong{
+    color: crimson;
+}
+
+.Destaque{
+    color: pink;
+    font-size: 50px;
+}
+
+img{
+    border-radius: 50%;
+    width: 200px;
+}
+
+#item{
+    color: white;
+}

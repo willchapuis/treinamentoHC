@@ -1,0 +1,24 @@
+body{
+    background-color: dimgrey;
+}
+
+h3{
+    color: mediumblue;
+}
+
+img{
+    border-radius: 50%;
+    width: 150px;
+}
+
+#salvar{
+    color: darkgreen;
+}
+
+#excluir{
+    color:darkred
+}
+
+#editar{
+    color:darkblue
+}

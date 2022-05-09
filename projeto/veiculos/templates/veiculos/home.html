@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Seja bem vindo</h1>
+
+    <p>Agora sao: {{ now }}</p>
+
+    <p><a href="{% url 'url_listaEntradas' %}">Listar Registros de Entrada</a></p>
+    <p><a href="{% url 'url_listaSaidas' %}">Listar Registros de Saida</a></p>
+    <p><a href="{% url 'url_novaEntrada' %}">Novo Registro de Entrada</a></p>
+    <p><a href="{% url 'url_novaSaida' %}">Novo Registro de Saida</a></p>
+    <p></p>
+    <p></p>
+</body>
+</html>
