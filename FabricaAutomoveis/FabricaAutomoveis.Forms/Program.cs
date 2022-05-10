@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CALogin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -16,7 +17,7 @@ namespace FabricaAutomoveis.Forms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             BOCALogin.setConexao("[famema.famema].teste");
-            Application.Run(new DTIFormPadrao());
+            Application.Run(new AUTO0001());
         }
     }
 }

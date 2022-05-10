@@ -1,0 +1,8 @@
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.Domain\bin\x86\Debug\FabricaAutomoveis.Domain.dll
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.Domain\bin\x86\Debug\FabricaAutomoveis.Domain.pdb
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.Domain\bin\x86\Debug\DTIDomain.Core.dll
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.Domain\obj\x86\Debug\FabricaAutomoveis.Domain.csproj.AssemblyReference.cache
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.Domain\obj\x86\Debug\FabricaAutomoveis.Domain.csproj.CoreCompileInputs.cache
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.Domain\obj\x86\Debug\FabricaAutomoveis.Domain.csproj.CopyComplete
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.Domain\obj\x86\Debug\FabricaAutomoveis.Domain.dll
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.Domain\obj\x86\Debug\FabricaAutomoveis.Domain.pdb

@@ -29,25 +29,40 @@ namespace FabricaAutomoveis.Forms
 
         private void AtualizaTela()
         {
-            //esta rotina pega os dados do objeto e joga na tela para o usuario visualizar. Tem que ser chamada quando é alteração
-            /***
-             * Exemplo:
-             * tbNome.Text = _Dominio.Nom_Convenio;
-             * */
+            tbNomeAutomovel.Text = _Dominio.Auto.nome_automovel;
+            pickerDataFabricacao.Value = _Dominio.Auto.data_fabricacao;
+            nudTanqueCombustivel.Value = _Dominio.Auto.tanque_combustivel;
+            nudKMLitro.Value = _Dominio.Auto.km_por_litro;
+            nudNroRodas.Value = _Dominio.nro_rodas;
+            if(_Dominio.estepe)
+                cbEstepe.Checked = true;
         }
 
         private void AtualizarObjeto()
         {
-            /*Esta rotina pega os dados da tela e alimenta o objeto.Tem que ser chamada antes da alteração e inclusao.
-             * Exemplo:
-             * _Dominio.Nom_Convenio = tbNome.Text;
-             * */
+            if (_Dominio == null)
+                _Dominio = new Terrestre();
+
+            if(_Dominio.Auto == null)
+                _Dominio.Auto = new Automovel();
+
+            _Dominio.Auto.nome_automovel = tbNomeAutomovel.Text;
+            _Dominio.Auto.data_fabricacao = pickerDataFabricacao.Value;
+            _Dominio.Auto.tanque_combustivel = Convert.ToInt32(nudTanqueCombustivel.Value);
+            _Dominio.Auto.km_por_litro = Convert.ToInt32(nudKMLitro.Value);
+            _Dominio.nro_rodas = Convert.ToInt32(nudNroRodas.Value);
+            if (cbEstepe.Checked)
+                _Dominio.estepe = true;
         }
 
         private void LimparTela()
         {
-            /*Rotina deve ser chamado quando clicado no Gravar e continuar, para limpar a tela e inserir novo*/
-
+            tbNomeAutomovel.Clear();
+            pickerDataFabricacao.Value = DateTime.Now;
+            nudTanqueCombustivel.Value = 10;
+            nudKMLitro.Value = 1;
+            nudNroRodas.Value = 1;
+            cbEstepe.Checked = false;
         }
 
         private void DTIFormManutencao_Load(object sender, EventArgs e)
@@ -56,7 +71,6 @@ namespace FabricaAutomoveis.Forms
             {
                 AtualizaTela();
             }
-
         }
 
 
@@ -64,8 +78,8 @@ namespace FabricaAutomoveis.Forms
         {
             if (_OPERACAO == "a")
             {
-                /*var dao = new PETDominioDAO();
-                return dao.update(_Dominio);*/
+                var dao = new TerrestreDAO();
+                return dao.update(_Dominio);
             }
             else if (_OPERACAO == "i")
             {
@@ -86,7 +100,6 @@ namespace FabricaAutomoveis.Forms
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
-            /*
             AtualizarObjeto();
 
             if (!DTIFormsUtil.ValidarDominio(_Dominio))
@@ -100,9 +113,8 @@ namespace FabricaAutomoveis.Forms
             else if (sender == btnGravarContinuar)
             {
                 LimparTela();
-                textBox1.Focus();
+                tbNomeAutomovel.Focus();
             }
-            */
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

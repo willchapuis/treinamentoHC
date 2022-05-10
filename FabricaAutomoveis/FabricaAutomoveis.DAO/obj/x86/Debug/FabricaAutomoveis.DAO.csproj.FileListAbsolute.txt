@@ -1,0 +1,13 @@
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\bin\x86\Debug\FabricaAutomoveis.DAO.dll
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\bin\x86\Debug\FabricaAutomoveis.DAO.pdb
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\bin\x86\Debug\ConexaoNTI.dll
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\bin\x86\Debug\DTIDAO.Core.dll
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\bin\x86\Debug\FabricaAutomoveis.Domain.dll
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\bin\x86\Debug\UtilDLL.dll
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\bin\x86\Debug\DTIDomain.Core.dll
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\bin\x86\Debug\FabricaAutomoveis.Domain.pdb
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\obj\x86\Debug\FabricaAutomoveis.DAO.csproj.AssemblyReference.cache
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\obj\x86\Debug\FabricaAutomoveis.DAO.csproj.CoreCompileInputs.cache
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\obj\x86\Debug\FabricaAutomoveis.DAO.csproj.CopyComplete
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\obj\x86\Debug\FabricaAutomoveis.DAO.dll
+C:\Users\william.dti\source\repos\FabricaAutomoveis\FabricaAutomoveis.DAO\obj\x86\Debug\FabricaAutomoveis.DAO.pdb

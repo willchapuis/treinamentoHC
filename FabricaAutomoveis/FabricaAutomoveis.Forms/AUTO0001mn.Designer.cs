@@ -198,9 +198,19 @@ namespace FabricaAutomoveis.Forms
             // nudKMLitro
             // 
             this.nudKMLitro.Location = new System.Drawing.Point(294, 114);
+            this.nudKMLitro.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudKMLitro.Name = "nudKMLitro";
             this.nudKMLitro.Size = new System.Drawing.Size(116, 20);
             this.nudKMLitro.TabIndex = 13;
+            this.nudKMLitro.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // lblNroRodas
             // 
@@ -214,11 +224,12 @@ namespace FabricaAutomoveis.Forms
             // pickerDataFabricacao
             // 
             this.pickerDataFabricacao.Location = new System.Drawing.Point(16, 75);
-            this.pickerDataFabricacao.MaxDate = new System.DateTime(2022, 4, 27, 0, 0, 0, 0);
+            this.pickerDataFabricacao.MaxDate = new System.DateTime(2022, 12, 31, 0, 0, 0, 0);
             this.pickerDataFabricacao.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.pickerDataFabricacao.Name = "pickerDataFabricacao";
             this.pickerDataFabricacao.Size = new System.Drawing.Size(394, 20);
             this.pickerDataFabricacao.TabIndex = 11;
+            this.pickerDataFabricacao.Value = new System.DateTime(2022, 4, 27, 0, 0, 0, 0);
             // 
             // AUTO0001mn
             // 

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E1F0A666-7957-464F-89F1-54EF840CC943}</ProjectGuid>
+    <ProjectGuid>{BA44B766-B781-437D-86CC-E439C5FBB1A9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>FabricaAutomoveis.Forms</RootNamespace>
     <AssemblyName>FabricaAutomoveis.Forms</AssemblyName>
@@ -44,8 +44,14 @@
     <OutputPath>bin\x86\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CALogin">
+      <HintPath>..\..\..\..\..\..\Sistemas\dllspublicacao\CALogin.dll</HintPath>
+    </Reference>
+    <Reference Include="ConexaoNTI">
+      <HintPath>..\..\..\..\..\..\Sistemas\dllspublicacao\ConexaoNTI.dll</HintPath>
+    </Reference>
     <Reference Include="DeskUtilDLL">
-      <HintPath>..\..\..\..\..\dllspublicacao\DeskUtilDLL.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Sistemas\dllspublicacao\DeskUtilDLL.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -54,11 +60,17 @@
     <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DTIDAO.Core">
+      <HintPath>..\..\..\..\..\..\Sistemas\dllspublicacao\DTIDAO.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DTIDomain.Core">
+      <HintPath>..\..\..\..\..\..\Sistemas\dllspublicacao\DTIDomain.Core.dll</HintPath>
+    </Reference>
     <Reference Include="DTIForms.Util">
-      <HintPath>..\..\..\..\DLLs\DTIForms.Util.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Sistemas\dllspublicacao\DTIForms.Util.dll</HintPath>
     </Reference>
     <Reference Include="NTIComponentes">
-      <HintPath>..\..\..\..\..\dllspublicacao\NTIComponentes.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Sistemas\dllspublicacao\NTIComponentes.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -70,31 +82,30 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="UtilDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\dllspublicacao\UtilDLL.dll</HintPath>
+    <Reference Include="UtilDLL">
+      <HintPath>..\..\..\..\..\..\Sistemas\dllspublicacao\UtilDLL.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTIFormManutencao.cs">
+    <Compile Include="AUTO0001.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DTIFormManutencao.Designer.cs">
-      <DependentUpon>DTIFormManutencao.cs</DependentUpon>
+    <Compile Include="AUTO0001.Designer.cs">
+      <DependentUpon>AUTO0001.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTIFormPadrao.cs">
+    <Compile Include="AUTO0001mn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DTIFormPadrao.Designer.cs">
-      <DependentUpon>DTIFormPadrao.cs</DependentUpon>
+    <Compile Include="AUTO0001mn.Designer.cs">
+      <DependentUpon>AUTO0001mn.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DTIFormManutencao.resx">
-      <DependentUpon>DTIFormManutencao.cs</DependentUpon>
+    <EmbeddedResource Include="AUTO0001.resx">
+      <DependentUpon>AUTO0001.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DTIFormPadrao.resx">
-      <DependentUpon>DTIFormPadrao.cs</DependentUpon>
+    <EmbeddedResource Include="AUTO0001mn.resx">
+      <DependentUpon>AUTO0001mn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -161,6 +172,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_subdirectory_arrow_left_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FabricaAutomoveis.DAO\FabricaAutomoveis.DAO.csproj">
+      <Project>{3ff459cc-6ee5-4414-ae3d-1dea6cf791b3}</Project>
+      <Name>FabricaAutomoveis.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FabricaAutomoveis.Domain\FabricaAutomoveis.Domain.csproj">
+      <Project>{4da6d173-84d9-4c31-a8c8-a6c229d4a592}</Project>
+      <Name>FabricaAutomoveis.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

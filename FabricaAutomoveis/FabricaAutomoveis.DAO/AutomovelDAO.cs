@@ -27,12 +27,13 @@ namespace FabricaAutomoveis.DAO
 
         public string insert(Automovel dominio)
         {
-            var camposInsert = new ListaCampos();
+            throw new NotImplementedException();
+            //var camposInsert = new ListaCampos();
 
-            camposInsert.Add("NOME_AUTOMOVEL", Util.strNULL(dominio.nome_automovel));
-            camposInsert.Add("DATA_FABRICACAO", dominio.data_fabricacao, typeof(DateTime));
-            camposInsert.Add("TANQUE", Util.intNULL(dominio.tanque_combustivel));
-            camposInsert.Add("KM_LITRO", Util.intNULL(dominio.km_por_litro));
+            //camposInsert.Add("NOME_AUTOMOVEL", Util.strNULL(dominio.nome_automovel));
+            //camposInsert.Add("DATA_FABRICACAO", dominio.data_fabricacao, typeof(DateTime));
+            //camposInsert.Add("TANQUE", Util.intNULL(dominio.tanque_combustivel));
+            //camposInsert.Add("KM_LITRO", Util.intNULL(dominio.km_por_litro));
         }
 
         public List<AutomovelDTO> Listar(NTIFiltro filtro)

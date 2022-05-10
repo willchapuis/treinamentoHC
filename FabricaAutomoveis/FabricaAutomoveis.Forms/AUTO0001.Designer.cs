@@ -53,30 +53,30 @@ namespace FabricaAutomoveis.Forms
             this.button1 = new System.Windows.Forms.Button();
             this.Comando1 = new System.Windows.Forms.Button();
             this.pnlFiltros = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblData = new System.Windows.Forms.Label();
-            this.dtInicio = new DevExpress.XtraEditors.DateEdit();
+            this.tbNomeAutomovel = new System.Windows.Forms.TextBox();
+            this.lblNomeAutomovel = new System.Windows.Forms.Label();
+            this.lblDataFabricacao = new System.Windows.Forms.Label();
+            this.deDataFabricacao = new DevExpress.XtraEditors.DateEdit();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnIncluir = new DevExpress.XtraEditors.SimpleButton();
             this.gridViewPrincipal = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.cIdAutomovel = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cNomeAutomovel = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cDataFabricacao = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cTanqueCombustivel = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cKMLitro = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cNroRodas = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cEstepe = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnEditar = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryEditar = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.btnExcluir = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryExcluir = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.cIdAutomovel = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dgvPrincipal = new DevExpress.XtraGrid.GridControl();
-            this.cTanqueCombustivel = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cKMLitro = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cEstepe = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cNroRodas = new DevExpress.XtraGrid.Columns.GridColumn();
             this.menuStrip1.SuspendLayout();
             this.pnlMenuRapido.SuspendLayout();
             this.pnlFiltros.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtInicio.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtInicio.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deDataFabricacao.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deDataFabricacao.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryEditar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryExcluir)).BeginInit();
@@ -191,10 +191,10 @@ namespace FabricaAutomoveis.Forms
             // 
             // pnlFiltros
             // 
-            this.pnlFiltros.Controls.Add(this.textBox1);
-            this.pnlFiltros.Controls.Add(this.label1);
-            this.pnlFiltros.Controls.Add(this.lblData);
-            this.pnlFiltros.Controls.Add(this.dtInicio);
+            this.pnlFiltros.Controls.Add(this.tbNomeAutomovel);
+            this.pnlFiltros.Controls.Add(this.lblNomeAutomovel);
+            this.pnlFiltros.Controls.Add(this.lblDataFabricacao);
+            this.pnlFiltros.Controls.Add(this.deDataFabricacao);
             this.pnlFiltros.Controls.Add(this.btnPesquisar);
             this.pnlFiltros.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlFiltros.Location = new System.Drawing.Point(0, 69);
@@ -202,42 +202,42 @@ namespace FabricaAutomoveis.Forms
             this.pnlFiltros.Size = new System.Drawing.Size(800, 63);
             this.pnlFiltros.TabIndex = 8;
             // 
-            // textBox1
+            // tbNomeAutomovel
             // 
-            this.textBox1.Location = new System.Drawing.Point(127, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 20);
-            this.textBox1.TabIndex = 3;
+            this.tbNomeAutomovel.Location = new System.Drawing.Point(127, 30);
+            this.tbNomeAutomovel.Name = "tbNomeAutomovel";
+            this.tbNomeAutomovel.Size = new System.Drawing.Size(185, 20);
+            this.tbNomeAutomovel.TabIndex = 3;
             // 
-            // label1
+            // lblNomeAutomovel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Descrição";
+            this.lblNomeAutomovel.AutoSize = true;
+            this.lblNomeAutomovel.Location = new System.Drawing.Point(124, 14);
+            this.lblNomeAutomovel.Name = "lblNomeAutomovel";
+            this.lblNomeAutomovel.Size = new System.Drawing.Size(103, 13);
+            this.lblNomeAutomovel.TabIndex = 2;
+            this.lblNomeAutomovel.Text = "Nome do Automovel";
             // 
-            // lblData
+            // lblDataFabricacao
             // 
-            this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(12, 14);
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(30, 13);
-            this.lblData.TabIndex = 2;
-            this.lblData.Text = "Data";
+            this.lblDataFabricacao.AutoSize = true;
+            this.lblDataFabricacao.Location = new System.Drawing.Point(12, 14);
+            this.lblDataFabricacao.Name = "lblDataFabricacao";
+            this.lblDataFabricacao.Size = new System.Drawing.Size(101, 13);
+            this.lblDataFabricacao.TabIndex = 2;
+            this.lblDataFabricacao.Text = "Data de Fabricação";
             // 
-            // dtInicio
+            // deDataFabricacao
             // 
-            this.dtInicio.EditValue = null;
-            this.dtInicio.Location = new System.Drawing.Point(13, 30);
-            this.dtInicio.Name = "dtInicio";
-            this.dtInicio.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.deDataFabricacao.EditValue = null;
+            this.deDataFabricacao.Location = new System.Drawing.Point(13, 30);
+            this.deDataFabricacao.Name = "deDataFabricacao";
+            this.deDataFabricacao.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtInicio.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.deDataFabricacao.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtInicio.Size = new System.Drawing.Size(100, 20);
-            this.dtInicio.TabIndex = 1;
+            this.deDataFabricacao.Size = new System.Drawing.Size(100, 20);
+            this.deDataFabricacao.TabIndex = 1;
             // 
             // btnPesquisar
             // 
@@ -285,6 +285,16 @@ namespace FabricaAutomoveis.Forms
             this.gridViewPrincipal.GridControl = this.dgvPrincipal;
             this.gridViewPrincipal.Name = "gridViewPrincipal";
             // 
+            // cIdAutomovel
+            // 
+            this.cIdAutomovel.Caption = "ID do Automovel";
+            this.cIdAutomovel.FieldName = "id_automovel";
+            this.cIdAutomovel.Name = "cIdAutomovel";
+            this.cIdAutomovel.OptionsColumn.AllowEdit = false;
+            this.cIdAutomovel.Visible = true;
+            this.cIdAutomovel.VisibleIndex = 0;
+            this.cIdAutomovel.Width = 61;
+            // 
             // cNomeAutomovel
             // 
             this.cNomeAutomovel.Caption = "Nome do Automovel";
@@ -304,6 +314,42 @@ namespace FabricaAutomoveis.Forms
             this.cDataFabricacao.Visible = true;
             this.cDataFabricacao.VisibleIndex = 2;
             this.cDataFabricacao.Width = 188;
+            // 
+            // cTanqueCombustivel
+            // 
+            this.cTanqueCombustivel.Caption = "Tanque de Combustivel";
+            this.cTanqueCombustivel.FieldName = "tanque_combustivel";
+            this.cTanqueCombustivel.Name = "cTanqueCombustivel";
+            this.cTanqueCombustivel.Visible = true;
+            this.cTanqueCombustivel.VisibleIndex = 3;
+            this.cTanqueCombustivel.Width = 92;
+            // 
+            // cKMLitro
+            // 
+            this.cKMLitro.Caption = "KM/Litro";
+            this.cKMLitro.FieldName = "km_por_litro";
+            this.cKMLitro.Name = "cKMLitro";
+            this.cKMLitro.Visible = true;
+            this.cKMLitro.VisibleIndex = 4;
+            this.cKMLitro.Width = 62;
+            // 
+            // cNroRodas
+            // 
+            this.cNroRodas.Caption = "Nro Rodas";
+            this.cNroRodas.FieldName = "nro_rodas";
+            this.cNroRodas.Name = "cNroRodas";
+            this.cNroRodas.Visible = true;
+            this.cNroRodas.VisibleIndex = 5;
+            this.cNroRodas.Width = 56;
+            // 
+            // cEstepe
+            // 
+            this.cEstepe.Caption = "Estepe";
+            this.cEstepe.FieldName = "estepe";
+            this.cEstepe.Name = "cEstepe";
+            this.cEstepe.Visible = true;
+            this.cEstepe.VisibleIndex = 6;
+            this.cEstepe.Width = 52;
             // 
             // btnEditar
             // 
@@ -343,16 +389,6 @@ namespace FabricaAutomoveis.Forms
             this.repositoryExcluir.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryExcluir.Click += new System.EventHandler(this.repositoryExcluir_Click);
             // 
-            // cIdAutomovel
-            // 
-            this.cIdAutomovel.Caption = "ID do Automovel";
-            this.cIdAutomovel.FieldName = "id_automovel";
-            this.cIdAutomovel.Name = "cIdAutomovel";
-            this.cIdAutomovel.OptionsColumn.AllowEdit = false;
-            this.cIdAutomovel.Visible = true;
-            this.cIdAutomovel.VisibleIndex = 0;
-            this.cIdAutomovel.Width = 61;
-            // 
             // dgvPrincipal
             // 
             this.dgvPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -366,42 +402,6 @@ namespace FabricaAutomoveis.Forms
             this.dgvPrincipal.TabIndex = 9;
             this.dgvPrincipal.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewPrincipal});
-            // 
-            // cTanqueCombustivel
-            // 
-            this.cTanqueCombustivel.Caption = "Tanque de Combustivel";
-            this.cTanqueCombustivel.FieldName = "tanque_combustivel";
-            this.cTanqueCombustivel.Name = "cTanqueCombustivel";
-            this.cTanqueCombustivel.Visible = true;
-            this.cTanqueCombustivel.VisibleIndex = 3;
-            this.cTanqueCombustivel.Width = 92;
-            // 
-            // cKMLitro
-            // 
-            this.cKMLitro.Caption = "KM/Litro";
-            this.cKMLitro.FieldName = "km_por_litro";
-            this.cKMLitro.Name = "cKMLitro";
-            this.cKMLitro.Visible = true;
-            this.cKMLitro.VisibleIndex = 4;
-            this.cKMLitro.Width = 62;
-            // 
-            // cEstepe
-            // 
-            this.cEstepe.Caption = "Estepe";
-            this.cEstepe.FieldName = "estepe";
-            this.cEstepe.Name = "cEstepe";
-            this.cEstepe.Visible = true;
-            this.cEstepe.VisibleIndex = 6;
-            this.cEstepe.Width = 52;
-            // 
-            // cNroRodas
-            // 
-            this.cNroRodas.Caption = "Nro Rodas";
-            this.cNroRodas.FieldName = "nro_rodas";
-            this.cNroRodas.Name = "cNroRodas";
-            this.cNroRodas.Visible = true;
-            this.cNroRodas.VisibleIndex = 5;
-            this.cNroRodas.Width = 56;
             // 
             // AUTO0001
             // 
@@ -423,8 +423,8 @@ namespace FabricaAutomoveis.Forms
             this.pnlMenuRapido.ResumeLayout(false);
             this.pnlFiltros.ResumeLayout(false);
             this.pnlFiltros.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtInicio.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtInicio.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deDataFabricacao.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deDataFabricacao.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPrincipal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryEditar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryExcluir)).EndInit();
@@ -451,10 +451,10 @@ namespace FabricaAutomoveis.Forms
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewPrincipal;
         private DevExpress.XtraGrid.GridControl dgvPrincipal;
         private System.Windows.Forms.Button Comando1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblData;
-        private DevExpress.XtraEditors.DateEdit dtInicio;
+        private System.Windows.Forms.TextBox tbNomeAutomovel;
+        private System.Windows.Forms.Label lblNomeAutomovel;
+        private System.Windows.Forms.Label lblDataFabricacao;
+        private DevExpress.XtraEditors.DateEdit deDataFabricacao;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem miSobreOPrograma;
